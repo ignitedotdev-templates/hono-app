@@ -2,13 +2,16 @@
   "name": "hono-app",
   "scripts": {
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy --minify"
+    "deploy": "wrangler deploy --minify",
+    "build": "tsc"
   },
   "dependencies": {
     "hono": "^4.6.9"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241022.0",
+    "typescript": "^5.6.3",
     "wrangler": "^3.83.0"
-  }
+  },
+  "type": "module"
 }
